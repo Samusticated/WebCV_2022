@@ -90,7 +90,7 @@
 
               <!-- Button to download CV PDF -->
               <div>
-                <a download="" href="assets/pdf/SamuWarinowski_CV.pdf" class="home__button-pdf">Download resume as PDF</a>
+                <a download="" href="assets/pdf/Resume_SamuWarinowski.pdf" class="home__button-pdf">Download resume as PDF</a>
               </div>
             </div>
             <div class="home__address bd-grid">
@@ -113,8 +113,8 @@
           <!-- Theme change button -->
           <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
 
-          <!-- Button to generate PDF -->
-          <i class='bx bx-download generate-pdf'></i>
+          <!-- Button to generate PDF / Available for desktop -->
+          <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
         </section>
 
         <!-- Social -->
@@ -131,6 +131,9 @@
             </a>
             <a href="https://instagram.com/samuwarinowski" target=_blank rel="noreferrer noopener" class="social__link">
               <i class='bx bxl-instagram social__icon'></i> @samuwarinowski
+            </a>
+            <a href="https://github.com/Samusticated" target=_blank rel="noreferrer noopener" class="social__link">
+              <i class='bx bxl-github social__icon'></i>@samusticated
             </a>
 
           </div>
@@ -304,7 +307,7 @@
 
       <!-- Languages -->
       <section class="language section" id="languages">
-        <h2 class="section-title">Languages</h2>
+        <h2 class="section-title languages__title">Languages</h2>
 
         <div class="languages__container">
           <ul class="languages__content bd-grid">
@@ -327,7 +330,7 @@
 
       <!-- Interests -->
       <section class="interests section" id="interests">
-        <h2 class="section-title">Interests</h2>
+        <h2 class="section-title interests__title">Interests</h2>
 
         <div class="interests__container bd-grid">
           <div class="interests__content">
@@ -356,6 +359,10 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js">
+    </script>
+
+    <!--HTML2PDF-->
+    <script src="assets/js/html2pdf.bundle.min.js">
     </script>
 </body>
 

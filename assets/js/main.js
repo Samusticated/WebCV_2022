@@ -97,12 +97,31 @@ function removeScale(){
 }
 
 //Generate PDF
-
+let areaCv = document.getElementById('area-cv')
 //PDF Generated area
 let resumeButton = document.getElementById('resume-button')
+
+//html2pdf options
+let opt = {
+  margin: 0,
+  filename: 'Resume_SamuWarinowski.pdf',
+  image: {type: 'jpeg', quality: 0.98},
+  html2canas: {scale: 4},
+  jsPDF: { format: 'a4', orientation: 'portrait'}
+}
+//Function to call areaCv and HTML2PDF
+function generateResume(){
+  html2pdf(areaCv, opt)
+}
 
 
 resumeButton.addEventListener('click', () =>{
 // 1. The class .scale-cv is added to body, where it reduces the size
   scaleCv()
+
+  // 2. PDF is Generated
+  generateResume()
+
+  // 3. Remove .scale-cv class
+  setTimeout(removeScale, 5000)
 })
