@@ -240,7 +240,7 @@ img {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 100;
+  z-index: var(--z-fixed);
   background-color: var(--body-color);
   box-shadow: 0 -1px 4px rgba(0, 0, 0, .1);
   transition: .3s;
@@ -254,7 +254,7 @@ img {
   align-items: center;
 }
 
-@media screen and (max-width: 968px) {
+@media  screen and (max-width: 968px) {
   .nav__menu {
     position: fixed;
     bottom: -100%;
@@ -286,7 +286,7 @@ img {
 
 .nav__item {
   text-align: center;
-  margin-bottom: 10em;
+  margin-bottom: 3em;
 }
 
 .nav__list {
@@ -337,8 +337,8 @@ img {
 }
 
 .home__img {
-  width: 218px;
-  height: 195px;
+  width: 230px;
+  height: 190px;
   padding: 4px;
   border-radius: 4%;
   justify-self: center;
@@ -555,6 +555,7 @@ img {
   bottom: 5rem;
 }
 
+
 /* Media queries */
 @media screen and (max-width: 320px) {
   .nav__list {
@@ -564,6 +565,7 @@ img {
 }
 
 /*Classes modified for big screens*/
+
 @media screen and (min-width: 968px) {
   body {
     margin: 3rem 0;
